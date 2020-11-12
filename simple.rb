@@ -25,7 +25,10 @@ class Simple
 
 end
 
+puts " ****** starting ******"
+
 s = Simple.new
 puts s.outputs_a3
+puts s.outputs_a1
 
-puts "done"
+puts " ****** done ******"
