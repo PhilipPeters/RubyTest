@@ -28,9 +28,13 @@ end
 puts " ****** starting ******";
 
 s = Simple.new;
+puts "first";
 s.test;
+puts "first";
 puts s.outputs_a3;
 puts s.outputs_a1;
+puts "second";
 s.test;
+puts "second";
 
 puts " ****** done ******";
