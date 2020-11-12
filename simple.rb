@@ -1,5 +1,4 @@
 class Simple
-  include ExcelFunctions
   def original_excel_filename; "/Users/tamc/Documents/github/excel_to_code/examples/simple/simple.xlsx"; end
   def inputs_a1; @inputs_a1 ||= "Your first name:"; end
   attr_accessor :inputs_b1 # Default: "Harry"
