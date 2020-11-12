@@ -38,6 +38,6 @@ puts s.outputs_a1;
 puts "second";
 s.test;
 puts "second";
-puts output_a5;
+puts s.output_a5;
 
 puts " ****** done ******";
