@@ -12,6 +12,8 @@ class Simple
   def outputs_a1; @outputs_a1 ||= string_join("Hello ",inputs_b1," ",inputs_b2, " ", outputs_a3); end
   def outputs_a2; @outputs_a2 ||= excel_if(excel_equal?(inputs_b4,42.0),"Well done, you know the meaning of life","Oh dear, that isn't the meaning of life. Guess again."); end
   def outputs_a3; @outputs_a3 ||= string_join("You were ",abs(subtract(42.0,inputs_b4))," out."); end
+  def outputs_a4; puts "hello"; end
+  def outputs_a5; @outputs_a4 ||= outputs_a4; end
   def test; puts @outputs_a1; end
 # Start of named references
 # End of named references
@@ -36,5 +38,6 @@ puts s.outputs_a1;
 puts "second";
 s.test;
 puts "second";
+puts output_a5;
 
 puts " ****** done ******";
