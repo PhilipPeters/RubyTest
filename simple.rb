@@ -9,7 +9,7 @@ class Simple
   attr_accessor :inputs_b2 # Default: "Potter"
   def inputs_a4; @inputs_a4 ||= "What is the meaning of life?"; end
   attr_accessor :inputs_b4 # Default: 24.0
-  def outputs_a1; @outputs_a1; end
+  def outputs_a1; @outputs_a1 = 3; end
   def outputs_a2; @outputs_a2 ||= excel_if(excel_equal?(inputs_b4,42.0),"Well done, you know the meaning of life","Oh dear, that isn't the meaning of life. Guess again."); end
   def outputs_a3; @outputs_a3 ||= string_join("You were ",abs(subtract(42.0,inputs_b4))," out."); end
 
