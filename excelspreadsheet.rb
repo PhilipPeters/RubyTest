@@ -1,6 +1,6 @@
 # coding: utf-8
 # Compiled version of /Users/rebeccapeters/downloads/rubbish.xlsx
-require '/Users/rebeccapeters/code/scripts/etc/excel_to_code/src/excel/excel_functions'
+require 'C:/Users/Philip/excel_to_code/src/excel/excel_functions'
 
 class Excelspreadsheet
   include ExcelFunctions
@@ -20,3 +20,8 @@ class Excelspreadsheet
   end
 
 end
+
+s = Excelspreadsheet.new;
+puts s.sheet1_a2;
+puts s.sheet1_b2;
+
