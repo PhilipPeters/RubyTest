@@ -24,3 +24,5 @@ class Simple
   end
 
 end
+
+s = Simple.new
