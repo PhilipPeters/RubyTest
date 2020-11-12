@@ -11,7 +11,7 @@ class Simple
   attr_accessor :inputs_b4 # Default: 24.0
   def outputs_a1; @outputs_a1 ||= string_join("Hello ",inputs_b1," ",inputs_b2); end
   def outputs_a2; @outputs_a2 ||= excel_if(excel_equal?(inputs_b4,42.0),"Well done, you know the meaning of life","Oh dear, that isn't the meaning of life. Guess again."); end
-  def outputs_a3; @outputs_a3 ||= string_join("You were ",abs(subtract(42.0,inputs_b4))," out."); puts "outputs_a3" ;end
+  def outputs_a3; @outputs_a3 ||= string_join("You were ",abs(subtract(42.0,inputs_b4))," out."); end
 
 # Start of named references
 # End of named references
@@ -26,6 +26,6 @@ class Simple
 end
 
 s = Simple.new
-s.outputs_a3
+puts s.outputs_a3
 
 puts "done"
