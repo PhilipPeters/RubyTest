@@ -26,3 +26,5 @@ class Simple
 end
 
 s = Simple.new
+
+puts "done"
